@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PredixMobileReact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-Ga-IFq">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4N-c0-vpb">
+                                <rect key="frame" x="300" y="328" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B4N-c0-vpb" firstAttribute="top" secondItem="LZm-Ga-IFq" secondAttribute="bottom" constant="10" id="2IT-ga-hZs"/>
+                            <constraint firstItem="LZm-Ga-IFq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XXr-MW-shb"/>
+                            <constraint firstItem="B4N-c0-vpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGy-kP-jFR"/>
+                            <constraint firstItem="LZm-Ga-IFq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oHU-Ec-bON"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="LZm-Ga-IFq" id="mdL-FF-KsP"/>
+                        <outlet property="spinnerMessage" destination="B4N-c0-vpb" id="Zcw-Ec-2TC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Fnv-gC-clS">
+            <objects>
+                <viewController storyboardIdentifier="authenticationVC" title="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="93F-VH-qpl" customClass="AuthenticationVC" customModule="PredixMobileReact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJ5-LS-emz"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhU-ub-1G8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DNw-pd-jU5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-sh-5gb">
+                                <rect key="frame" x="0.0" y="12" width="600" height="596"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wT4-mh-Yn3">
+                                <rect key="frame" x="281" y="282" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyC-rf-Hr7">
+                                <rect key="frame" x="300" y="329" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iZg-sh-5gb" firstAttribute="topMargin" secondItem="kJ5-LS-emz" secondAttribute="bottom" id="2Bd-Ct-iLL"/>
+                            <constraint firstItem="gyC-rf-Hr7" firstAttribute="top" secondItem="wT4-mh-Yn3" secondAttribute="bottom" constant="10" id="HK4-T6-Y5F"/>
+                            <constraint firstItem="iZg-sh-5gb" firstAttribute="leading" secondItem="DNw-pd-jU5" secondAttribute="leading" id="Nh3-gl-FDm"/>
+                            <constraint firstItem="fhU-ub-1G8" firstAttribute="top" secondItem="iZg-sh-5gb" secondAttribute="bottomMargin" id="WEk-LU-UgP"/>
+                            <constraint firstItem="wT4-mh-Yn3" firstAttribute="centerX" secondItem="DNw-pd-jU5" secondAttribute="centerX" id="Xfr-Dy-dJk"/>
+                            <constraint firstItem="wT4-mh-Yn3" firstAttribute="centerY" secondItem="DNw-pd-jU5" secondAttribute="centerY" id="dJ8-8G-lRb"/>
+                            <constraint firstAttribute="trailing" secondItem="iZg-sh-5gb" secondAttribute="trailing" id="ec4-bz-lHJ"/>
+                            <constraint firstItem="gyC-rf-Hr7" firstAttribute="centerX" secondItem="DNw-pd-jU5" secondAttribute="centerX" id="qZl-KZ-Lvr"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="spinner" destination="wT4-mh-Yn3" id="fdT-Z0-0z8"/>
+                        <outlet property="spinnerMessage" destination="gyC-rf-Hr7" id="buB-hf-dnG"/>
+                        <outlet property="webView" destination="iZg-sh-5gb" id="fx9-YI-XWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvq-OD-6Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="205"/>
+        </scene>
+    </scenes>
+</document>

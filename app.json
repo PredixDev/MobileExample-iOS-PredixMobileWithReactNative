@@ -1,0 +1,8 @@
+{
+    "name": "react-sample",
+    "version": "1.0",
+    "starter": "pm-react",
+    "dependencies": {
+        "pm-react": "0.0.1"
+     }
+}

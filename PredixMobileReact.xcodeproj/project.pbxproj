@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F082D331CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F082D321CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift */; };
+		4F62EAA21CE6377B00594EFF /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F62EAA11CE6377B00594EFF /* AuthenticationVC.swift */; };
+		4F63DAC91CE646A8001D314B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F63DAC81CE646A8001D314B /* Settings.bundle */; };
+		4FA4B2EA1CE62D70003630BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4B2E91CE62D70003630BE /* AppDelegate.swift */; };
+		4FA4B2EC1CE62D70003630BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4B2EB1CE62D70003630BE /* ViewController.swift */; };
+		4FA4B2EF1CE62D70003630BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4B2ED1CE62D70003630BE /* Main.storyboard */; };
+		4FA4B2F11CE62D70003630BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4B2F01CE62D70003630BE /* Assets.xcassets */; };
+		4FA4B2F41CE62D70003630BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA4B2F21CE62D70003630BE /* LaunchScreen.storyboard */; };
+		4FA4B2FF1CE62D71003630BE /* PredixMobileReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4B2FE1CE62D71003630BE /* PredixMobileReactTests.swift */; };
+		4FA4B30A1CE62D71003630BE /* PredixMobileReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4B3091CE62D71003630BE /* PredixMobileReactUITests.swift */; };
+		4FB2D09B1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2D09A1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m */; };
+		4FD3B3361CE62FCE00BEE503 /* PredixMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3161CE62FBE00BEE503 /* PredixMobileSDK.framework */; };
+		4FD3B3371CE62FCE00BEE503 /* PredixMobileSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3161CE62FBE00BEE503 /* PredixMobileSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FD3B33A1CE62FED00BEE503 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3391CE62FED00BEE503 /* libz.tbd */; };
+		4FD3B33C1CE62FF500BEE503 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B33B1CE62FF500BEE503 /* libsqlite3.tbd */; };
+		4FD3B33E1CE62FFA00BEE503 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B33D1CE62FFA00BEE503 /* CFNetwork.framework */; };
+		4FD3B3401CE6300000BEE503 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B33F1CE6300000BEE503 /* SystemConfiguration.framework */; };
+		4FD3B3421CE6300600BEE503 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3411CE6300600BEE503 /* Security.framework */; };
+		4FD3B3431CE6302000BEE503 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B31A1CE62FBF00BEE503 /* libRCTActionSheet.a */; };
+		4FD3B3441CE6302000BEE503 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B31D1CE62FBF00BEE503 /* libRCTGeolocation.a */; };
+		4FD3B3451CE6302000BEE503 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3201CE62FBF00BEE503 /* libRCTImage.a */; };
+		4FD3B3461CE6302000BEE503 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3231CE62FBF00BEE503 /* libRCTLinking.a */; };
+		4FD3B3471CE6302000BEE503 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3261CE62FBF00BEE503 /* libRCTNetwork.a */; };
+		4FD3B3481CE6302000BEE503 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3291CE62FBF00BEE503 /* libRCTSettings.a */; };
+		4FD3B3491CE6302000BEE503 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B32C1CE62FBF00BEE503 /* libRCTText.a */; };
+		4FD3B34A1CE6302000BEE503 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B32F1CE62FBF00BEE503 /* libRCTVibration.a */; };
+		4FD3B34B1CE6302000BEE503 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3321CE62FBF00BEE503 /* libRCTWebSocket.a */; };
+		4FD3B34C1CE6302000BEE503 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD3B3351CE62FBF00BEE503 /* libReact.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FA4B2FB1CE62D71003630BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA4B2DE1CE62D70003630BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA4B2E51CE62D70003630BE;
+			remoteInfo = PredixMobileReact;
+		};
+		4FA4B3061CE62D71003630BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA4B2DE1CE62D70003630BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA4B2E51CE62D70003630BE;
+			remoteInfo = PredixMobileReact;
+		};
+		4FD3B3191CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F01CE62ECA00BEE503 /* RCTActionSheet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTActionSheet;
+		};
+		4FD3B31C1CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F31CE62ECA00BEE503 /* RCTGeolocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTGeolocation;
+		};
+		4FD3B31F1CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F61CE62ECA00BEE503 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		4FD3B3221CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F91CE62ECA00BEE503 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTLinking;
+		};
+		4FD3B3251CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2FC1CE62ECA00BEE503 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		4FD3B3281CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2FF1CE62ECA00BEE503 /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTSettings;
+		};
+		4FD3B32B1CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B3021CE62ECA00BEE503 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		4FD3B32E1CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B3051CE62ECA00BEE503 /* RCTVibration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
+			remoteInfo = RCTVibration;
+		};
+		4FD3B3311CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B3081CE62ECA00BEE503 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		4FD3B3341CE62FBF00BEE503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2ED1CE62ECA00BEE503 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FD3B3381CE62FCF00BEE503 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FD3B3371CE62FCE00BEE503 /* PredixMobileSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F082D321CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredixMobileReactURLRequestHandler.swift; sourceTree = "<group>"; };
+		4F62EAA11CE6377B00594EFF /* AuthenticationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		4F63DAC81CE646A8001D314B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4FA4B2E61CE62D70003630BE /* PredixMobileReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredixMobileReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA4B2E91CE62D70003630BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FA4B2EB1CE62D70003630BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FA4B2EE1CE62D70003630BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FA4B2F01CE62D70003630BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FA4B2F31CE62D70003630BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FA4B2F51CE62D70003630BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA4B2FA1CE62D71003630BE /* PredixMobileReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredixMobileReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA4B2FE1CE62D71003630BE /* PredixMobileReactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredixMobileReactTests.swift; sourceTree = "<group>"; };
+		4FA4B3001CE62D71003630BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA4B3051CE62D71003630BE /* PredixMobileReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PredixMobileReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA4B3091CE62D71003630BE /* PredixMobileReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredixMobileReactUITests.swift; sourceTree = "<group>"; };
+		4FA4B30B1CE62D71003630BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB2D08B1CE64C0700EF0A8A /* PredixMobileReact-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PredixMobileReact-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FB2D0991CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredixMobileReactURLRequestHandler.h; sourceTree = "<group>"; };
+		4FB2D09A1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredixMobileReactURLRequestHandler.m; sourceTree = "<group>"; };
+		4FD3B2ED1CE62ECA00BEE503 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2F01CE62ECA00BEE503 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2F31CE62ECA00BEE503 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2F61CE62ECA00BEE503 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2F91CE62ECA00BEE503 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2FC1CE62ECA00BEE503 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B2FF1CE62ECA00BEE503 /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B3021CE62ECA00BEE503 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B3051CE62ECA00BEE503 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B3081CE62ECA00BEE503 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../PredixMobileReact/node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		4FD3B3161CE62FBE00BEE503 /* PredixMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PredixMobileSDK.framework; sourceTree = "<group>"; };
+		4FD3B3391CE62FED00BEE503 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4FD3B33B1CE62FF500BEE503 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4FD3B33D1CE62FFA00BEE503 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4FD3B33F1CE6300000BEE503 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4FD3B3411CE6300600BEE503 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4FD3B34F1CE6309A00BEE503 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA4B2E31CE62D70003630BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD3B33A1CE62FED00BEE503 /* libz.tbd in Frameworks */,
+				4FD3B33C1CE62FF500BEE503 /* libsqlite3.tbd in Frameworks */,
+				4FD3B33E1CE62FFA00BEE503 /* CFNetwork.framework in Frameworks */,
+				4FD3B3401CE6300000BEE503 /* SystemConfiguration.framework in Frameworks */,
+				4FD3B3421CE6300600BEE503 /* Security.framework in Frameworks */,
+				4FD3B3361CE62FCE00BEE503 /* PredixMobileSDK.framework in Frameworks */,
+				4FD3B34C1CE6302000BEE503 /* libReact.a in Frameworks */,
+				4FD3B3431CE6302000BEE503 /* libRCTActionSheet.a in Frameworks */,
+				4FD3B3441CE6302000BEE503 /* libRCTGeolocation.a in Frameworks */,
+				4FD3B3451CE6302000BEE503 /* libRCTImage.a in Frameworks */,
+				4FD3B3461CE6302000BEE503 /* libRCTLinking.a in Frameworks */,
+				4FD3B3471CE6302000BEE503 /* libRCTNetwork.a in Frameworks */,
+				4FD3B3481CE6302000BEE503 /* libRCTSettings.a in Frameworks */,
+				4FD3B3491CE6302000BEE503 /* libRCTText.a in Frameworks */,
+				4FD3B34A1CE6302000BEE503 /* libRCTVibration.a in Frameworks */,
+				4FD3B34B1CE6302000BEE503 /* libRCTWebSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B2F71CE62D71003630BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B3021CE62D71003630BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA4B2DD1CE62D70003630BE = {
+			isa = PBXGroup;
+			children = (
+				4F63DAC81CE646A8001D314B /* Settings.bundle */,
+				4FA4B2E81CE62D70003630BE /* PredixMobileReact */,
+				4FD3B3151CE62FBE00BEE503 /* Frameworks */,
+				4FD3B2EC1CE62EB600BEE503 /* Libraries */,
+				4FA4B2FD1CE62D71003630BE /* PredixMobileReactTests */,
+				4FA4B3081CE62D71003630BE /* PredixMobileReactUITests */,
+				4FA4B2E71CE62D70003630BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA4B2E71CE62D70003630BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA4B2E61CE62D70003630BE /* PredixMobileReact.app */,
+				4FA4B2FA1CE62D71003630BE /* PredixMobileReactTests.xctest */,
+				4FA4B3051CE62D71003630BE /* PredixMobileReactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA4B2E81CE62D70003630BE /* PredixMobileReact */ = {
+			isa = PBXGroup;
+			children = (
+				4FB2D08D1CE6565E00EF0A8A /* Resources */,
+				4FD3B34E1CE6309A00BEE503 /* CouchbaseLite */,
+				4FA4B2E91CE62D70003630BE /* AppDelegate.swift */,
+				4FA4B2EB1CE62D70003630BE /* ViewController.swift */,
+				4F62EAA11CE6377B00594EFF /* AuthenticationVC.swift */,
+				4FA4B2ED1CE62D70003630BE /* Main.storyboard */,
+				4FA4B2F01CE62D70003630BE /* Assets.xcassets */,
+				4FA4B2F21CE62D70003630BE /* LaunchScreen.storyboard */,
+				4FA4B2F51CE62D70003630BE /* Info.plist */,
+				4FB2D08B1CE64C0700EF0A8A /* PredixMobileReact-Bridging-Header.h */,
+				4FB2D0991CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.h */,
+				4FB2D09A1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m */,
+				4F082D321CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift */,
+			);
+			path = PredixMobileReact;
+			sourceTree = "<group>";
+		};
+		4FA4B2FD1CE62D71003630BE /* PredixMobileReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA4B2FE1CE62D71003630BE /* PredixMobileReactTests.swift */,
+				4FA4B3001CE62D71003630BE /* Info.plist */,
+			);
+			path = PredixMobileReactTests;
+			sourceTree = "<group>";
+		};
+		4FA4B3081CE62D71003630BE /* PredixMobileReactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA4B3091CE62D71003630BE /* PredixMobileReactUITests.swift */,
+				4FA4B30B1CE62D71003630BE /* Info.plist */,
+			);
+			path = PredixMobileReactUITests;
+			sourceTree = "<group>";
+		};
+		4FB2D08D1CE6565E00EF0A8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FD3B2EC1CE62EB600BEE503 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B2ED1CE62ECA00BEE503 /* React.xcodeproj */,
+				4FD3B2F01CE62ECA00BEE503 /* RCTActionSheet.xcodeproj */,
+				4FD3B2F31CE62ECA00BEE503 /* RCTGeolocation.xcodeproj */,
+				4FD3B2F61CE62ECA00BEE503 /* RCTImage.xcodeproj */,
+				4FD3B2F91CE62ECA00BEE503 /* RCTLinking.xcodeproj */,
+				4FD3B2FC1CE62ECA00BEE503 /* RCTNetwork.xcodeproj */,
+				4FD3B2FF1CE62ECA00BEE503 /* RCTSettings.xcodeproj */,
+				4FD3B3021CE62ECA00BEE503 /* RCTText.xcodeproj */,
+				4FD3B3051CE62ECA00BEE503 /* RCTVibration.xcodeproj */,
+				4FD3B3081CE62ECA00BEE503 /* RCTWebSocket.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		4FD3B2EE1CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3351CE62FBF00BEE503 /* libReact.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B2F11CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B31A1CE62FBF00BEE503 /* libRCTActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B2F41CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B31D1CE62FBF00BEE503 /* libRCTGeolocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B2F71CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3201CE62FBF00BEE503 /* libRCTImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B2FA1CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3231CE62FBF00BEE503 /* libRCTLinking.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B2FD1CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3261CE62FBF00BEE503 /* libRCTNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B3001CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3291CE62FBF00BEE503 /* libRCTSettings.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B3031CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B32C1CE62FBF00BEE503 /* libRCTText.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B3061CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B32F1CE62FBF00BEE503 /* libRCTVibration.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B3091CE62ECA00BEE503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3321CE62FBF00BEE503 /* libRCTWebSocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3B3151CE62FBE00BEE503 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B3411CE6300600BEE503 /* Security.framework */,
+				4FD3B33F1CE6300000BEE503 /* SystemConfiguration.framework */,
+				4FD3B33D1CE62FFA00BEE503 /* CFNetwork.framework */,
+				4FD3B33B1CE62FF500BEE503 /* libsqlite3.tbd */,
+				4FD3B3391CE62FED00BEE503 /* libz.tbd */,
+				4FD3B3161CE62FBE00BEE503 /* PredixMobileSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FD3B34E1CE6309A00BEE503 /* CouchbaseLite */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3B34F1CE6309A00BEE503 /* module.modulemap */,
+			);
+			path = CouchbaseLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA4B2E51CE62D70003630BE /* PredixMobileReact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA4B30E1CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReact" */;
+			buildPhases = (
+				4FA4B2E21CE62D70003630BE /* Sources */,
+				4FA4B2E31CE62D70003630BE /* Frameworks */,
+				4FA4B2E41CE62D70003630BE /* Resources */,
+				4FD3B3381CE62FCF00BEE503 /* Embed Frameworks */,
+				4FD3B34D1CE6306800BEE503 /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PredixMobileReact;
+			productName = PredixMobileReact;
+			productReference = 4FA4B2E61CE62D70003630BE /* PredixMobileReact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FA4B2F91CE62D71003630BE /* PredixMobileReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA4B3111CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReactTests" */;
+			buildPhases = (
+				4FA4B2F61CE62D71003630BE /* Sources */,
+				4FA4B2F71CE62D71003630BE /* Frameworks */,
+				4FA4B2F81CE62D71003630BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA4B2FC1CE62D71003630BE /* PBXTargetDependency */,
+			);
+			name = PredixMobileReactTests;
+			productName = PredixMobileReactTests;
+			productReference = 4FA4B2FA1CE62D71003630BE /* PredixMobileReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FA4B3041CE62D71003630BE /* PredixMobileReactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA4B3141CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReactUITests" */;
+			buildPhases = (
+				4FA4B3011CE62D71003630BE /* Sources */,
+				4FA4B3021CE62D71003630BE /* Frameworks */,
+				4FA4B3031CE62D71003630BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA4B3071CE62D71003630BE /* PBXTargetDependency */,
+			);
+			name = PredixMobileReactUITests;
+			productName = PredixMobileReactUITests;
+			productReference = 4FA4B3051CE62D71003630BE /* PredixMobileReactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA4B2DE1CE62D70003630BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = GE;
+				TargetAttributes = {
+					4FA4B2E51CE62D70003630BE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4FA4B2F91CE62D71003630BE = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4FA4B2E51CE62D70003630BE;
+					};
+					4FA4B3041CE62D71003630BE = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4FA4B2E51CE62D70003630BE;
+					};
+				};
+			};
+			buildConfigurationList = 4FA4B2E11CE62D70003630BE /* Build configuration list for PBXProject "PredixMobileReact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FA4B2DD1CE62D70003630BE;
+			productRefGroup = 4FA4B2E71CE62D70003630BE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4FD3B2F11CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2F01CE62ECA00BEE503 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B2F41CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2F31CE62ECA00BEE503 /* RCTGeolocation.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B2F71CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2F61CE62ECA00BEE503 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B2FA1CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2F91CE62ECA00BEE503 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B2FD1CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2FC1CE62ECA00BEE503 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B3001CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2FF1CE62ECA00BEE503 /* RCTSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B3031CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B3021CE62ECA00BEE503 /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B3061CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B3051CE62ECA00BEE503 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B3091CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B3081CE62ECA00BEE503 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 4FD3B2EE1CE62ECA00BEE503 /* Products */;
+					ProjectRef = 4FD3B2ED1CE62ECA00BEE503 /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4FA4B2E51CE62D70003630BE /* PredixMobileReact */,
+				4FA4B2F91CE62D71003630BE /* PredixMobileReactTests */,
+				4FA4B3041CE62D71003630BE /* PredixMobileReactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4FD3B31A1CE62FBF00BEE503 /* libRCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTActionSheet.a;
+			remoteRef = 4FD3B3191CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B31D1CE62FBF00BEE503 /* libRCTGeolocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTGeolocation.a;
+			remoteRef = 4FD3B31C1CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3201CE62FBF00BEE503 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = 4FD3B31F1CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3231CE62FBF00BEE503 /* libRCTLinking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTLinking.a;
+			remoteRef = 4FD3B3221CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3261CE62FBF00BEE503 /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = 4FD3B3251CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3291CE62FBF00BEE503 /* libRCTSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTSettings.a;
+			remoteRef = 4FD3B3281CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B32C1CE62FBF00BEE503 /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 4FD3B32B1CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B32F1CE62FBF00BEE503 /* libRCTVibration.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVibration.a;
+			remoteRef = 4FD3B32E1CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3321CE62FBF00BEE503 /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 4FD3B3311CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FD3B3351CE62FBF00BEE503 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 4FD3B3341CE62FBF00BEE503 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA4B2E41CE62D70003630BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F63DAC91CE646A8001D314B /* Settings.bundle in Resources */,
+				4FA4B2F41CE62D70003630BE /* LaunchScreen.storyboard in Resources */,
+				4FA4B2F11CE62D70003630BE /* Assets.xcassets in Resources */,
+				4FA4B2EF1CE62D70003630BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B2F81CE62D71003630BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B3031CE62D71003630BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FD3B34D1CE6306800BEE503 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\nnode_modules/react-native/packager/react-native-xcode.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA4B2E21CE62D70003630BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA4B2EC1CE62D70003630BE /* ViewController.swift in Sources */,
+				4F082D331CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift in Sources */,
+				4FA4B2EA1CE62D70003630BE /* AppDelegate.swift in Sources */,
+				4FB2D09B1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m in Sources */,
+				4F62EAA21CE6377B00594EFF /* AuthenticationVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B2F61CE62D71003630BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA4B2FF1CE62D71003630BE /* PredixMobileReactTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA4B3011CE62D71003630BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA4B30A1CE62D71003630BE /* PredixMobileReactUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FA4B2FC1CE62D71003630BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA4B2E51CE62D70003630BE /* PredixMobileReact */;
+			targetProxy = 4FA4B2FB1CE62D71003630BE /* PBXContainerItemProxy */;
+		};
+		4FA4B3071CE62D71003630BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA4B2E51CE62D70003630BE /* PredixMobileReact */;
+			targetProxy = 4FA4B3061CE62D71003630BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FA4B2ED1CE62D70003630BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA4B2EE1CE62D70003630BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FA4B2F21CE62D70003630BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FA4B2F31CE62D70003630BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FA4B30C1CE62D71003630BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FA4B30D1CE62D71003630BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FA4B30F1CE62D71003630BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/node_modules/react-native/React/**";
+				INFOPLIST_FILE = PredixMobileReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		4FA4B3101CE62D71003630BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/node_modules/react-native/React/**";
+				INFOPLIST_FILE = PredixMobileReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		4FA4B3121CE62D71003630BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PredixMobileReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredixMobileReact.app/PredixMobileReact";
+			};
+			name = Debug;
+		};
+		4FA4B3131CE62D71003630BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PredixMobileReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredixMobileReact.app/PredixMobileReact";
+			};
+			name = Release;
+		};
+		4FA4B3151CE62D71003630BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PredixMobileReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PredixMobileReact;
+			};
+			name = Debug;
+		};
+		4FA4B3161CE62D71003630BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PredixMobileReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PredixMobileReact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA4B2E11CE62D70003630BE /* Build configuration list for PBXProject "PredixMobileReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA4B30C1CE62D71003630BE /* Debug */,
+				4FA4B30D1CE62D71003630BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA4B30E1CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA4B30F1CE62D71003630BE /* Debug */,
+				4FA4B3101CE62D71003630BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA4B3111CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA4B3121CE62D71003630BE /* Debug */,
+				4FA4B3131CE62D71003630BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA4B3141CE62D71003630BE /* Build configuration list for PBXNativeTarget "PredixMobileReactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA4B3151CE62D71003630BE /* Debug */,
+				4FA4B3161CE62D71003630BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA4B2DE1CE62D70003630BE /* Project object */;
+}

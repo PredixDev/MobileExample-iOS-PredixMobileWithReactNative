@@ -1,0 +1,7 @@
+{
+  "name": "pm-react",
+  "version": "0.0.1",
+  "main": "main.jsbundle",
+  "src-folder": "./dist/",
+  "output-folder": "./dist-zip/"
+}
