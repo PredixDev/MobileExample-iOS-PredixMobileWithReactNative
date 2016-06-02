@@ -1,6 +1,8 @@
 # MobileExample-iOS-PredixMobileWithReactNative
 
-This example is a Predix Mobile container, that demonstrates how a developer might use [React-Native](https://facebook.github.io/react-native/) in combination with Predix Mobile.
+This example Predix Mobile app container demonstrates how a developer might use [React Native](https://facebook.github.io/react-native/) to extend Predix Mobile.
+
+This simple project demonstrates calling a Predix Mobile client service from React Native, and also subscribing to a notification, receiving data from Predix Mobile notifications in your React Native javascript code.
 
 ####Quick setup:
 
@@ -23,10 +25,10 @@ Download this example from Github, and then from the command line:
 
 Now you are ready to begin, open and run the PredixMobileReact project in XCode.
 
-This project is very simple. It demonstrates calling a Predix Mobile client service from React Native, and also subscribing to a notification, receiving data from Predix Mobile notifications in your React Native javascript code.
+
 
 #### Tips
-When updating index.io.js, to compile and publish to Couchbase, run the included script:
+When updating `index.io.js` to compile and publish to Couchbase, run the included script:
 
     ./publish-react-pm.sh
 
