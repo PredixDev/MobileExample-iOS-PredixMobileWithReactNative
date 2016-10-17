@@ -1,6 +1,10 @@
 # MobileExample-iOS-PredixMobileWithReactNative
 
-This example Predix Mobile app container demonstrates how a developer might use [React Native](https://facebook.github.io/react-native/) to extend Predix Mobile.
+This example Predix Mobile app container demonstrates how a developer might use [React Native](https://facebook.github.io/react-native/) to extend Predix Mobile. To get started, follow this documentation:
+* [Get Started with the Mobile Service and Mobile SDK] (https://www.predix.io/docs#rae4EfJ6) 
+* [Running the Predix Mobile Sample App] (https://www.predix.io/docs#EGUzWwcC)
+* [Creating a Mobile Hello World Webapp] (https://www.predix.io/docs#DrBWuHkl) 
+
 
 This simple project demonstrates calling a Predix Mobile client service from React Native, and also subscribing to a notification, receiving data from Predix Mobile notifications in your React Native javascript code.
 
