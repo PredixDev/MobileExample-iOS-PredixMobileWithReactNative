@@ -27,12 +27,12 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
     }
 
     // MARK: - PredixAppWindowProtocol
-    func loadURL(URL: NSURL, parameters: [NSObject : AnyObject]?, onComplete: (()->())?)
+    func loadURL(_ url: URL, parameters: [AnyHashable: Any]?, onComplete: (()->())?)
     {
-        if URL.scheme != "about"
+        if url.scheme != "about"
         {
             // pull react native page from webapp
-            let jsCodeLocation = URL;
+            let jsCodeLocation = url;
             
             // load from react-native host for testing
             //let jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios&dev=true")!
@@ -44,20 +44,20 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
         }
     }
     
-    func updateWaitState(state: WaitState, message: String?)
+    func updateWaitState(_ state: WaitState, message: String?)
     {
         switch state
         {
-        case .NotWaiting :
+        case .notWaiting :
             self.spinner.stopAnimating()
-            self.spinner.hidden = true
+            self.spinner.isHidden = true
             self.spinnerMessage.text = nil
-            self.spinnerMessage.hidden = true
+            self.spinnerMessage.isHidden = true
             
-        case .Waiting :
+        case .waiting :
             
-            self.spinner.hidden = false
-            self.spinnerMessage.hidden = false
+            self.spinner.isHidden = false
+            self.spinnerMessage.isHidden = false
             self.spinner.startAnimating()
             self.spinnerMessage.text = message
         }
@@ -65,10 +65,10 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
     
     func waitState() -> (PredixMobileSDK.WaitStateReturn)
     {
-        return WaitStateReturn(state: self.spinner.hidden ? .NotWaiting : .Waiting, message: self.spinnerMessage.text)
+        return WaitStateReturn(state: self.spinner.isHidden ? .notWaiting : .waiting, message: self.spinnerMessage.text)
     }
     
-    func receiveAppNotification(originalScript: String)
+    func receiveAppNotification(_ originalScript: String)
     {
         // split out script from arguments, and serialize arguments
         
@@ -76,11 +76,11 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
         var script = originalScript
         if script.hasSuffix(";")
         {
-            script.removeAtIndex(script.endIndex.predecessor())
+            script.remove(at: script.characters.index(before: script.endIndex))
         }
         
         // Separate the function name from the arguments. Removing any empty elements
-        let scriptComponents = script.componentsSeparatedByCharactersInSet(NSCharacterSet.init(charactersInString: "()")).filter{ (component) -> Bool in
+        let scriptComponents = script.components(separatedBy: CharacterSet.init(charactersIn: "()")).filter{ (component) -> Bool in
             !component.isEmpty
         }
     
@@ -91,10 +91,10 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
 
 
         // form a JSON array of the arguments and create an NSData object of the string to de-serialize
-        if let argumentData = "[\(scriptComponents[1])]".dataUsingEncoding(NSUTF8StringEncoding) where scriptComponents.count > 1
+        if let argumentData = "[\(scriptComponents[1])]".data(using: String.Encoding.utf8), scriptComponents.count > 1
         {
             // if argumentData can be de-serialzed, then do so, and replace default arguments variable
-            if let deserializedObject = try? NSJSONSerialization.JSONObjectWithData(argumentData, options: NSJSONReadingOptions.AllowFragments), deserializedArguments = deserializedObject as? [AnyObject]
+            if let deserializedObject = try? JSONSerialization.jsonObject(with: argumentData, options: JSONSerialization.ReadingOptions.allowFragments), let deserializedArguments = deserializedObject as? [AnyObject]
             {
                 arguments = deserializedArguments
             }
@@ -103,7 +103,7 @@ class ViewController: UIViewController, PredixAppWindowProtocol {
         // if we have a function name, send the event.
         if scriptComponents.count > 0
         {
-            self.rootView.bridge.eventDispatcher.sendAppEventWithName(scriptComponents[0], body:arguments)
+            self.rootView.bridge.eventDispatcher().sendAppEvent(withName: scriptComponents[0], body:arguments)
         }
         
     }

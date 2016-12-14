@@ -11,19 +11,19 @@ import PredixMobileSDK
 
 extension PredixMobileReactURLRequestHandler : RCTURLRequestHandler
 {
-    public func canHandleRequest(request: NSURLRequest!) -> Bool {
-        return request.URL!.host == PredixMobilityConfiguration.API_HOST
+    public func canHandle(_ request: URLRequest!) -> Bool {
+        return request.url!.host == PredixMobilityConfiguration.apiHostname
     }
     
-    public func sendRequest(request: NSURLRequest!, withDelegate delegate: RCTURLRequestDelegate!) -> AnyObject! {
-        ServiceRouter.sharedInstance.processRequest(request, responseBlock: { (response: NSURLResponse?) in
-                delegate.URLRequest(request, didReceiveResponse: response)
-            }, dataBlock: { (data: NSData?) in
-                delegate.URLRequest(request, didReceiveData:data)
+    public func send(_ request: URLRequest!, with delegate: RCTURLRequestDelegate!) -> Any! {
+        ServiceRouter.sharedInstance.processRequest(request, responseBlock: { (response: URLResponse?) in
+                delegate.urlRequest(request, didReceive: response)
+            }, dataBlock: { (data: Data?) in
+                delegate.urlRequest(request, didReceive:data)
             }) { 
-                delegate.URLRequest(request, didCompleteWithError: nil)
+                delegate.urlRequest(request, didCompleteWithError: nil)
         }
-        return request
+        return request as AnyObject!
     }
     
     public func handlerPriority() -> Float {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F082D331CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F082D321CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift */; };
+		4F2982E21DEF54C300F4DB19 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F2982E11DEF54C300F4DB19 /* Entitlements.plist */; };
 		4F62EAA21CE6377B00594EFF /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F62EAA11CE6377B00594EFF /* AuthenticationVC.swift */; };
 		4F63DAC91CE646A8001D314B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F63DAC81CE646A8001D314B /* Settings.bundle */; };
 		4FA4B2EA1CE62D70003630BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA4B2E91CE62D70003630BE /* AppDelegate.swift */; };
@@ -38,6 +39,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4F2982C61DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F61CE62ECA00BEE503 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+		4F2982CA1DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2F91CE62ECA00BEE503 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
+			remoteInfo = "RCTLinking-tvOS";
+		};
+		4F2982CE1DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2FC1CE62ECA00BEE503 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		4F2982D21DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2FF1CE62ECA00BEE503 /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
+			remoteInfo = "RCTSettings-tvOS";
+		};
+		4F2982D61DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B3021CE62ECA00BEE503 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		4F2982DB1DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B3081CE62ECA00BEE503 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		4F2982DF1DEF545500F4DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3B2ED1CE62ECA00BEE503 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
 		4FA4B2FB1CE62D71003630BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FA4B2DE1CE62D70003630BE /* Project object */;
@@ -140,6 +190,7 @@
 
 /* Begin PBXFileReference section */
 		4F082D321CEA46B200E12C73 /* PredixMobileReactURLRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredixMobileReactURLRequestHandler.swift; sourceTree = "<group>"; };
+		4F2982E11DEF54C300F4DB19 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		4F62EAA11CE6377B00594EFF /* AuthenticationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
 		4F63DAC81CE646A8001D314B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4FA4B2E61CE62D70003630BE /* PredixMobileReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredixMobileReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +304,7 @@
 				4FA4B2F01CE62D70003630BE /* Assets.xcassets */,
 				4FA4B2F21CE62D70003630BE /* LaunchScreen.storyboard */,
 				4FA4B2F51CE62D70003630BE /* Info.plist */,
+				4F2982E11DEF54C300F4DB19 /* Entitlements.plist */,
 				4FB2D08B1CE64C0700EF0A8A /* PredixMobileReact-Bridging-Header.h */,
 				4FB2D0991CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.h */,
 				4FB2D09A1CE6944200EF0A8A /* PredixMobileReactURLRequestHandler.m */,
@@ -307,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3351CE62FBF00BEE503 /* libReact.a */,
+				4F2982E01DEF545500F4DB19 /* libReact-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3201CE62FBF00BEE503 /* libRCTImage.a */,
+				4F2982C71DEF545500F4DB19 /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3231CE62FBF00BEE503 /* libRCTLinking.a */,
+				4F2982CB1DEF545500F4DB19 /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3261CE62FBF00BEE503 /* libRCTNetwork.a */,
+				4F2982CF1DEF545500F4DB19 /* libRCTNetwork-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3291CE62FBF00BEE503 /* libRCTSettings.a */,
+				4F2982D31DEF545500F4DB19 /* libRCTSettings-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B32C1CE62FBF00BEE503 /* libRCTText.a */,
+				4F2982D71DEF545500F4DB19 /* libRCTText-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -379,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD3B3321CE62FBF00BEE503 /* libRCTWebSocket.a */,
+				4F2982DC1DEF545500F4DB19 /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -469,18 +528,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = GE;
 				TargetAttributes = {
 					4FA4B2E51CE62D70003630BE = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 					4FA4B2F91CE62D71003630BE = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 4FA4B2E51CE62D70003630BE;
 					};
 					4FA4B3041CE62D71003630BE = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 4FA4B2E51CE62D70003630BE;
 					};
 				};
@@ -548,6 +610,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		4F2982C71DEF545500F4DB19 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 4F2982C61DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982CB1DEF545500F4DB19 /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 4F2982CA1DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982CF1DEF545500F4DB19 /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 4F2982CE1DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982D31DEF545500F4DB19 /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 4F2982D21DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982D71DEF545500F4DB19 /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 4F2982D61DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982DC1DEF545500F4DB19 /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 4F2982DB1DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F2982E01DEF545500F4DB19 /* libReact-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-tvOS.a";
+			remoteRef = 4F2982DF1DEF545500F4DB19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		4FD3B31A1CE62FBF00BEE503 /* libRCTActionSheet.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -628,6 +739,7 @@
 				4F63DAC91CE646A8001D314B /* Settings.bundle in Resources */,
 				4FA4B2F41CE62D70003630BE /* LaunchScreen.storyboard in Resources */,
 				4FA4B2F11CE62D70003630BE /* Assets.xcassets in Resources */,
+				4F2982E21DEF54C300F4DB19 /* Entitlements.plist in Resources */,
 				4FA4B2EF1CE62D70003630BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,8 +855,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -789,8 +903,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -809,6 +925,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -817,10 +934,11 @@
 		4FA4B30F1CE62D71003630BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator10.1]" = $SRCROOT/$PRODUCT_NAME/Entitlements.plist;
 				DEFINES_MODULE = NO;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,21 +951,23 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4FA4B3101CE62D71003630BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -860,11 +980,13 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(PRODUCT_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/${PROJECT_NAME}-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -872,10 +994,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/node_modules/react-native/React/**";
 				INFOPLIST_FILE = PredixMobileReactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredixMobileReact.app/PredixMobileReact";
 			};
 			name = Debug;
@@ -884,10 +1008,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/node_modules/react-native/React/**";
 				INFOPLIST_FILE = PredixMobileReactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PredixMobileReact.app/PredixMobileReact";
 			};
 			name = Release;
@@ -899,6 +1025,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PredixMobileReact;
 			};
 			name = Debug;
@@ -910,6 +1037,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ge.PredixMobileReactUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PredixMobileReact;
 			};
 			name = Release;

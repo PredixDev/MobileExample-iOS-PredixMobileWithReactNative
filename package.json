@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-  	"postinstall": "./setup-react-pm.sh"
+    "postinstall": "./setup-react-pm.sh"
   },
   "dependencies": {
-    "react": "^0.14.8",
-    "react-native": "^0.25.1"
+    "react": "^15.4.1",
+    "react-native": "^0.38.0"
   }
 }
