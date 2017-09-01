@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         // logging our current running environment
-        Logger.debug("Started app with launchOptions: \(launchOptions)")
+        Logger.debug("Started app with launchOptions: \(String(describing: launchOptions))")
         
         if Logger.isInfoEnabled() {
             let versionInfo = PredixMobilityConfiguration.getVersionInfo()
